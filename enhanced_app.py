@@ -50,7 +50,7 @@ def init_database():
 def initialize_components():
     # Document loading and processing
     loader = DirectoryLoader(
-        "/home/koushik-muvva/Desktop/Research(never_ending)/data",
+        "C:/Users/koush/Desktop/mental health/data",
         glob="*.pdf",
         loader_cls=PyPDFLoader
     )
@@ -65,8 +65,8 @@ def initialize_components():
     # LLM and QA chain
     llm = ChatGroq(
         temperature=0,
-        groq_api_key="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",
-        model_name="llama3-70b-8192"
+        groq_api_key="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",
+        model_name="llama-3.3-70b-versatile"
     )
 
     # Mental health focused prompt - YOUR EXACT PROMPT
